@@ -1,0 +1,39 @@
+{
+  "name": "pharos-testnet-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pharos Testnet Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node main/start.js",
+    "setup": "node main/setup.js",
+    "dev": "node index.js",
+    "test": "node test.js",
+    "prebuild": "find . -name '._*' -type f -delete",
+    "build": "rm -rf app && javascript-obfuscator --config build-config.json"
+  },
+  "keywords": [
+    "pharos-testnet",
+    "pharos-testnet-bot",
+    "pharos-bot",
+    "pharos-daily",
+    "nofan"
+  ],
+  "author": "Nofan Rambe",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ohmynofan/pharos-testnet-bot-js.git"
+  },
+  "dependencies": {
+    "bip39": "^3.1.0",
+    "ethers": "^6.13.2",
+    "https-proxy-agent": "^7.0.5",
+    "moment-timezone": "^0.5.45",
+    "node-fetch": "^3.3.2",
+    "twisters": "^1.1.0",
+    "winston": "^3.13.0",
+    "sqlite": "^5.1.1",
+    "sqlite3": "^5.1.7"
+  }
+}
