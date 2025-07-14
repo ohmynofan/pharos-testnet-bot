@@ -1,1 +1,1 @@
-# pharos-testnet-bot
+# PHAROS TESTNET BOT
